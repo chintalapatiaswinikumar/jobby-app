@@ -1,0 +1,66 @@
+.profileBox {
+  background-image: url('https://assets.ccbp.in/frontend/react-js/profile-bg.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: 30px;
+  /*   height: 100vh;
+ */
+}
+
+.profile-container {
+  font-family: 'Roboto';
+  padding: 20px;
+}
+
+/* .profile {
+  padding: 30px;
+} */
+
+.profilePara {
+  width: 70%;
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.profileHeading {
+  padding-left: 30px;
+  color: #6366f1;
+}
+
+.img1 {
+  padding-top: 30px;
+  padding-left: 30px;
+}
+
+.horizontal {
+  margin: 30px;
+}
+
+.button {
+  height: 40px;
+  width: 100px;
+  background-color: #4f46e5;
+  border-radius: 5px;
+  border-width: 0px;
+  cursor: pointer;
+  color: #ffffff;
+}
+
+/* .profileList {
+  list-style-type: none;
+}
+
+.profileHeading1 {
+  padding-left: 30px;
+  color: #ffffff;
+}
+
+.profileInput {
+  cursor: pointer;
+}
+
+.profileLabel {
+  cursor: pointer;
+  color: #ffffff;
+}
+ */

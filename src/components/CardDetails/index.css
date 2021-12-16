@@ -1,0 +1,105 @@
+.decoration {
+  background-color: #000000;
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  color: #ffffff;
+  padding: 100px;
+  font-family: 'Roboto';
+  height: 100%;
+  width: 100%;
+}
+
+.decor2 {
+  background-color: #272727;
+  padding: 50px;
+  border-radius: 20px;
+}
+
+.decor3 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.decor4 {
+  margin-left: 30px;
+}
+
+.decor5 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.decor6 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.decor7 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.decor8 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.decor9 {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.decor10 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.decor11 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 20px;
+  margin: 20px;
+}
+
+.anch {
+  text-decoration: none;
+}
+
+.ara {
+  margin-left: 10px;
+}
+
+.details-logo {
+  width: 100px;
+  height: 100px;
+}
+
+.decor12 {
+  margin: 20px;
+  border-radius: 15px;
+  background-color: #272727;
+  padding: 30px;
+}
+
+.failure-container {
+  background-color: #000000;
+  height: 100vh;
+  width: 100vw;
+  color: #ffffff;
+  font-family: 'Roboto';
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  justify-self: center;
+}
