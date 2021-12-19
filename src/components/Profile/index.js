@@ -69,7 +69,7 @@ class Profile extends Component {
     if (check === true) {
       activeList.push(id)
       console.log(activeList)
-      activeId(id)
+      activeId(activeList)
     }
     if (check === false) {
       const active = activeList.filter(item => item !== id)

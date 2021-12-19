@@ -39,12 +39,12 @@ class Jobs extends Component {
       apiStatus: apiStatusConstants.inProgress,
     })
     const {activeList, salList, searchText} = this.state
-    console.log(len(activeList))
 
-    const x = activeList.length > 1 ? activeList.join(',') : activeList
-    const y = salList.length > 1 ? salList.join(',') : salList
+    console.log('x', activeList, salList)
+
+    const x = activeList.join(',')
+    const y = salList.join(',')
     const z = searchText
-    console.log('joined ones', x, y, z)
     const apiUrl = `https://apis.ccbp.in/jobs?employment_type=${x}&minimum_package=${y}&search=${z}`
     const jwtToken = Cookies.get('jwt_token')
     const options = {
