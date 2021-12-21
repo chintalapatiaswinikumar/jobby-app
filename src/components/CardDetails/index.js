@@ -1,17 +1,14 @@
 import {Component} from 'react'
 import Loader from 'react-loader-spinner'
 import Cookies from 'js-cookie'
-<<<<<<< HEAD
 import {Link} from 'react-router-dom'
-=======
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
 
 import 'react-loader-spinner/dist/loader/css/react-spinner-loader.css'
 import './index.css'
 import {BsFillStarFill, BsBoxArrowUpRight} from 'react-icons/bs'
 import {ImLocation} from 'react-icons/im'
 import {MdWork} from 'react-icons/md'
-import NotFound from '../NotFound'
+import NotFound from '../NotFound/index'
 
 const apiStatusConstants = {
   initial: 'INITIAL',
@@ -38,10 +35,6 @@ class CardDetails extends Component {
     const {match} = this.props
     const {params} = match
     const {id} = params
-<<<<<<< HEAD
-=======
-    const {detailedData} = this.state
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
     const apiUrl = `https://apis.ccbp.in/jobs/${id}`
     const jwtToken = Cookies.get('jwt_token')
     const options = {
@@ -58,10 +51,7 @@ class CardDetails extends Component {
       const fetchedData = await response.json()
       const data = {}
       const updatedData = {}
-<<<<<<< HEAD
       console.log('fetched data', fetchedData)
-=======
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
       updatedData.companyLogoUrl = fetchedData.job_details.company_logo_url
       updatedData.companyWebsiteUrl =
         fetchedData.job_details.company_website_url
@@ -87,7 +77,6 @@ class CardDetails extends Component {
     }
   }
 
-<<<<<<< HEAD
   onClickLogout = () => {
     Cookies.remove('jwt_token')
     const {history} = this.props
@@ -95,8 +84,6 @@ class CardDetails extends Component {
     history.replace('/login')
   }
 
-=======
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
   renderItemDetails = () => {
     const {detailedData} = this.state
     console.log(detailedData)
@@ -115,7 +102,6 @@ class CardDetails extends Component {
     } = JobDetails
 
     return (
-<<<<<<< HEAD
       <>
         <nav className="nav-header">
           <div className="nav-content">
@@ -249,94 +235,11 @@ class CardDetails extends Component {
           </div>
         </div>
       </>
-=======
-      <div className="decoration">
-        <div className="decor2">
-          <div className="decor3">
-            <img
-              src={companyLogoUrl}
-              className="details-logo"
-              alt="job details company logo"
-            />
-            <div className="decor4">
-              <h1>{title}</h1>
-              <BsFillStarFill style={{color: '#fbbf24'}} />
-              <span>{rating}</span>
-            </div>
-          </div>
-          <div className="decor5">
-            <div className="decor6">
-              <ImLocation style={{marginTop: '18px'}} />
-              <p>{location}</p>
-              <MdWork style={{marginTop: '18px', marginLeft: '15px'}} />
-              <p className="ara">{employmentType}</p>
-            </div>
-            <p>{packagePerAnnum}</p>
-          </div>
-          <hr />
-          <div className="decor7">
-            <h1>Description</h1>
-            <a href={companyWebsiteUrl} className="anch">
-              Visit
-              <BsBoxArrowUpRight />
-            </a>
-          </div>
-          <p>{jobDescription}</p>
-          <h1>Skills</h1>
-          <div className="decor10">
-            {skills.map(item => (
-              <div className="decor9">
-                <img src={item.image_url} alt={item.name} />
-                <p className="ara">{item.name}</p>
-              </div>
-            ))}
-          </div>
-          <h1>Life at Company</h1>
-          <div className="decor8">
-            <p>{lifeAtCompany.description}</p>
-            <img src={lifeAtCompany.image_url} alt="life at company" />
-          </div>
-        </div>
-        <h1>Skills</h1>
-        <div className="decor11">
-          {similarJobs.map(item => (
-            <div className="decor12">
-              <div className="decor3">
-                <img
-                  src={item.company_logo_url}
-                  className="details-logo"
-                  alt="job details company logo"
-                />
-                <div className="decor4">
-                  <h1>{item.title}</h1>
-                  <BsFillStarFill style={{color: '#fbbf24'}} />
-                  <span>{item.rating}</span>
-                </div>
-              </div>
-              <h1>Description</h1>
-              <p>{item.job_description}</p>
-              <div className="decor5">
-                <div className="decor6">
-                  <ImLocation style={{marginTop: '18px'}} />
-                  <p>{item.location}</p>
-                  <MdWork style={{marginTop: '18px', marginLeft: '15px'}} />
-                  <p className="ara">{item.employment_type}</p>
-                </div>
-              </div>
-            </div>
-          ))}
-        </div>
-      </div>
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
     )
   }
 
   renderLoadingView = () => (
-<<<<<<< HEAD
     <div className="products-loader-container" testid="loader">
-=======
-    <div className="products-loader-container">
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
       <Loader type="ThreeDots" color="#0b69ff" height="50" width="50" />
     </div>
   )
@@ -348,15 +251,10 @@ class CardDetails extends Component {
         alt="failure view"
         className="failure-image"
       />
-<<<<<<< HEAD
       <h1 className="hello">Oops! Something Went Wrong</h1>
       <p className="hello">
         We cannot seem to find the page you are looking for
       </p>
-=======
-      <h1 className="hello">Oops!Something went wrong</h1>
-      <p className="hello">We cannot seem to find a page you are looking for</p>
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
       <button
         type="button"
         className="hello button"

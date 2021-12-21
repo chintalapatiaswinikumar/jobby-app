@@ -5,14 +5,9 @@ import Home from './components/Home'
 import ProtectedRoute from './components/ProtectedRoute'
 import NotFound from './components/NotFound'
 import Jobs from './components/Jobs'
-import CardDetails from './components/CardDetails'
-<<<<<<< HEAD
+import CardDetails from './components/CardDetails/index'
 /* import Header from './components/Header'
  */
-=======
-import Header from './components/Header'
-
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
 // These are the lists used in the application. You can move them to any component needed.
 /* const employmentTypesList = [
   {
@@ -55,24 +50,16 @@ const salaryRangesList = [
 // Replace your code here
 const App = () => (
   <BrowserRouter>
-<<<<<<< HEAD
     {/*     <Header />
      */}{' '}
-=======
-    <Header />
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
     <Switch>
       <Route exact path="/login" component={LoginForm} />
       <ProtectedRoute exact path="/" component={Home} />
       <ProtectedRoute exact path="/jobs" component={Jobs} />
       <ProtectedRoute path="/jobs/:id" component={CardDetails} />
-      <ProtectedRoute path="/bad-path" component={NotFound} />
-<<<<<<< HEAD
+      <ProtectedRoute path="/not-found" component={NotFound} />
       {/*       <Redirect to="bad-path" />
        */}{' '}
-=======
-      <Redirect to="bad-path" />
->>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
     </Switch>
   </BrowserRouter>
 )
