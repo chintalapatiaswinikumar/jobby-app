@@ -43,13 +43,13 @@ class Home extends Component {
               <Link to="/jobs" className="nav-link">
                 <li>Jobs</li>
               </Link>
-              <button
+              {/*  <button
                 type="button"
                 className="logout-desktop-btn"
                 onClick={this.onClickLogout}
               >
                 Logout
-              </button>
+              </button> */}
             </ul>
 
             <li>

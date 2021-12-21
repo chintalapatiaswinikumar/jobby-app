@@ -21,6 +21,7 @@ class LoginForm extends Component {
   }
 
   onSubmitSuccess = jwtTkoken => {
+    console.log('login form')
     const {history} = this.props
     history.replace('/')
 
