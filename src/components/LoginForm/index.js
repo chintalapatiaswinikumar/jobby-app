@@ -22,12 +22,19 @@ class LoginForm extends Component {
 
   onSubmitSuccess = jwtTkoken => {
     const {history} = this.props
+<<<<<<< HEAD
     history.replace('/')
+=======
+>>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
 
     Cookies.set('jwt_token', jwtTkoken, {
       expires: 30,
       path: '/',
     })
+<<<<<<< HEAD
+=======
+    history.replace('/')
+>>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
   }
 
   onSubmitFailure = errorMsg => {

@@ -72,6 +72,7 @@
   background-color: #272727;
   border-width: 0px;
 }
+<<<<<<< HEAD
 
 .cardImage {
   height: 40px;
@@ -114,3 +115,5 @@
   flex-direction: row;
   justify-content: flex-start;
 }
+=======
+>>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82

@@ -69,13 +69,19 @@ class Profile extends Component {
     if (check === true) {
       activeList.push(id)
       console.log(activeList)
+<<<<<<< HEAD
       this.setState({activeList})
+=======
+>>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
       activeId(activeList)
     }
     if (check === false) {
       const active = activeList.filter(item => item !== id)
       this.setState({activeList: active})
+<<<<<<< HEAD
       activeId(active)
+=======
+>>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
     }
   }
 
@@ -128,7 +134,10 @@ class Profile extends Component {
         <div className="profile-container">
           <div>
             <div className="profileBox">
+<<<<<<< HEAD
               {console.log('in profile')}
+=======
+>>>>>>> 02af72ed9c076ba616ea086f87c7acff5c9d3b82
               <img
                 src={profileDetails.profileImageUrl}
                 alt="profile"
