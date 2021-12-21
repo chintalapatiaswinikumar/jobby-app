@@ -1,0 +1,17 @@
+.profileList {
+  list-style-type: none;
+}
+
+.profileHeading1 {
+  padding-left: 30px;
+  color: #ffffff;
+}
+
+.profileInput {
+  cursor: pointer;
+}
+
+.profileLabel {
+  cursor: pointer;
+  color: #ffffff;
+}
